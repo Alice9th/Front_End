@@ -1,13 +1,13 @@
 body 
 { 
-    font-family: sans-serif;
+    font-family: Calibri, Helvetica, sans-serif;
     
-
 }
 
 header
 {
-    background-color:lightgrey;
+    background-color: #dddddd;
+    line-height: 2;
     text-align: center;
 }
 
@@ -19,7 +19,42 @@ h1
 
 footer
 {
-    background-color: navy;
+    background-color: #1f497D;
     text-align: center;
+    font-size: 24px;
+    color: #ddd;
     
+}
+
+.UP 
+{
+    text-transform: uppercase;
+}
+
+.item-detail
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.img-link
+{
+    width: 30px;
+    height: 30px;
+}
+
+h1,h2
+{
+    background-color: #bfbfbf;
+    letter-spacing: 0.5em;
+}
+
+h1
+{
+    color: darkblue
+}
+
+h2
+{
+    color: brown
 }
