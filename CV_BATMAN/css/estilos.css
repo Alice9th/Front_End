@@ -1,0 +1,25 @@
+body 
+{ 
+    font-family: sans-serif;
+    
+
+}
+
+header
+{
+    background-color:lightgrey;
+    text-align: center;
+}
+
+h1
+{
+    background-color: slategray;
+    font-size: large;
+}
+
+footer
+{
+    background-color: navy;
+    text-align: center;
+    
+}
