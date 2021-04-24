@@ -140,7 +140,7 @@ section{
     left: 34%;
     top: 5%;
     position: absolute;
-    z-index: 10;
+    z-index: 15;
     padding: 1%;
 }
 
@@ -370,7 +370,39 @@ h1{
     background-image:  url('../img/linternaverde.jpg');
     left: 600px;
 }
-/* Acá termina el CSS específico de la página 2 */
+
+/* == BOTON PLUS == */
+
+.plus{
+    /* Ellipse 2 */
+background-size: contain;
+position: relative;
+width: 150px;
+height: 150px;
+left: 100px;
+top: 164px;
+
+background-color: #00669F;
+z-index: 0;
+}
+
+
+.signo{
+    position: absolute;
+width: 55px;
+height: 113px;
+left: 2847px;
+top: 1653px;
+
+font-family: Roboto;
+font-style:italic;
+font-weight:700;
+font-size: 296px;
+line-height: 112px;
+/* identical to box height */
+color: #FFFFFF;
+
+}
 
 footer{
     background-color: #00669F;
@@ -391,7 +423,7 @@ footer{
 }
 .github{
     height: auto;
-    margin-left: 90%;
+    margin-left: 65%;
     margin-top: 19px;
     position: absolute;
     width: 80px;
