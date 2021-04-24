@@ -37,6 +37,10 @@ h2, h3{
     color: darkolivegreen;
 }
 
+.iconocolor{
+    color: darkolivegreen;
+}
+
 h1{
     font-size: 100px;
     text-align: center;
@@ -58,10 +62,18 @@ footer{
     color: #FFFDD0;
 }
 
-.centered{
+.center_text{
     text-align: center;
 }
 
+.centered_list {
+	text-align: center;
+}
+
+.centered_list ul{
+	text-align: left;
+	display: inline-block;
+}
 .intro{
     font-size: 20px;
 }
