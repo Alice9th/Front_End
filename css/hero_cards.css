@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+ box-sizing: border-box;
+}
+
+aside{
+    /*background-color: #D1891C;*/
+    font-size: 1.2em;
+    padding: 0.2%;
+}
+
+header{
+    margin: 250px;
+}
+
+.descuento{
+    /* Rectangle 45 */
+    position: fixed;
+    width: 2056px;
+    height: 61px;
+    left: 0px;
+    top: 0px;
+
+    background: #1CD1B0;
+}
+
+.desc_letra{
+    /* Descuentos 20% */
+
+
+position: fixed;
+width: 354px;
+height: 45px;
+left: 40px;
+top: 5px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 56px;
+
+color: #000000;
+}
+
+.card_banner{
+/* Rectangle 40 */
+
+
+position: fixed;
+width: 2056px;
+height: 162px;
+left: 0px;
+top: 60px;
+
+background: #00669F;
+box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.banner_letter{
+    /* Card Super Heroes */
+
+
+position: fixed;
+width: 602px;
+height: 90px;
+left: 40px;
+top: 70px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 84px;
+
+
+color: #FFFFFF;
+}
+
+
+body{
+    --color-blue: #00669f; 
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+h1{
+    font-size: 2.5em;
+    line-height: normal;
+    margin: 0;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    top: 150px;
+}
+
+/* === CARD SECTION === */
+
+section{
+    margin:200px;
+}
+
+.card_super{
+    margin:0 auto;
+}
+
+
+.card{ 
+    background-color: #f3f3f3;  
+    border-radius: 15px 15px 0 0;
+    filter: drop-shadow(0px 3px 1px rgba(0,0,0,0.16));
+    margin: 30px auto;
+    max-width: 300px;
+
+} 
+
+.card_header{
+    margin-bottom: 50px;
+    position: relative;    
+}
+
+.card_body{
+    padding: 5%;
+}
+
+
+.corazon{
+    color: #CC2424;
+    font-size: 2em;
+    left: 34%;
+    top: 5%;
+    position: absolute;
+    z-index: 10;
+    padding: 1%;
+}
+
+.bloque_carta{
+    /* Rectangle 38 */
+
+
+position: absolute;
+width: 805px;
+height: 872px;
+left: 626px;
+top: 762px;
+background: #F3F3F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* === FONDOS === */
+
+
+.fondo_imagen{
+    /*Fondo del Super*/
+
+    background-size:contain;
+    border-radius: 15px 15px 0px 0px;
+    height: 40%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    left: 450px;
+    z-index: 10;
+
+}
+
+
+.fondo_batman{
+        /* Imagen Batman Background*/
+    background-image: url('../img/bg-batman.jpg');
+    
+}
+
+
+.p-btn{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.the_space_between_us{
+    margin: 50px;
+}
+.fondo_maravilla{
+            /* Imagen WM Background */
+    background-image: url('../img/bg-wonderw.jpg');
+}
+.fondo_superman{
+    background-image: url('../img/bg-superman.jpg');
+}
+
+.perfil_imagen{
+    /*la foto del super*/
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 120px;
+    left: 660px; 
+    top: 180px;
+    width: 120px;
+    position:absolute;
+    z-index: 15;
+    
+}
+
+.container_bat{
+    /* Rectangle 38 */
+
+    background-size:contain;
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+    width: 40%;
+    height: 80%;
+    left: 450px;
+    top: 130px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    padding: 50px;
+    }
+
+.container_WW{
+        /* Rectangle 38 */
+    
+
+        background-size:contain;
+        border-radius: 0px 0px 15px 15px;
+        position: relative;
+        width: 40%;
+        height: 80%;
+        left: 450px;
+        top: 130px;
+        background: #F3F3F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 0;
+        padding: 50px;
+        
+}
+
+.container_SM{
+    /* Rectangle 38 */
+
+
+    background-size:contain;
+    border-radius: 0px 0px 15px 15px;
+    position: relative;
+    width: 40%;
+    height: 80%;
+    left: 450px;
+    top: 130px;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    padding: 50px;
+    
+}
+
+
+.perfil_batman{
+    position:relative;
+    background-image: url('../img/batman.jpg');
+}
+.perfil_maravilla{
+    position:relative;
+    background-image: url('../img/wonderw.jpg');
+
+}
+.perfil_superman{
+    position:relative;
+    background-image: url('../img/superman.jpg');
+}
+
+
+
+.texto{
+    left: 420px;
+    position: relative;
+    top: 100px;
+    width: 80%;
+    text-align: center;
+    z-index: 5;
+}
+
+
+.h3_batman{
+    margin-left: 38%;
+    margin-right: 38%;
+}
+.h3_maravilla{
+    margin-left: 24%;
+    margin-right: 23%;
+}
+.h3_superman{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+
+.parra{
+    /*text-align: justify;*/
+    left: 42px;
+    position: relative;
+    top: 0px;
+    width: 80%;
+    padding: 20px;
+    font-size: larger;
+}
+
+a.boton{
+    background-color: #00669F;
+    border-radius: 7px;
+    bottom: 5%;
+    color: white;
+    height: 10pt;
+    margin-left: 60pt;
+    margin-right: 80pt;
+    position: relative;
+    text-align: center;
+    width: 130pt;
+    left: 60px;
+    padding: 15px;
+    text-decoration: none;
+    z-index: 15;
+}
+
+/* Acá empieza el CSS específico de la página 2 */
+h1{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 30pt;
+    font-style: normal;
+    left: 385px;
+    position: absolute;
+    top: 100px;
+}
+.div_proximamente{
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 300px;
+    position: absolute;
+    top: 250px;
+    width: 300px;
+}
+.aquaman{
+    background-image: url('../img/aquaman.jpg');
+    left: 200px;
+}
+
+.flash{
+    background-image: url('../img/flash.jpg');
+    left: 400px;
+}
+
+.linterna_verde{
+    background-image:  url('../img/linternaverde.jpg');
+    left: 600px;
+}
+/* Acá termina el CSS específico de la página 2 */
+
+footer{
+    background-color: #00669F;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    z-index: 6;
+}
+.derechos{
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    margin: 20px 136px 20px 450px;
+    position: absolute;
+    width: 400px;
+    text-align: center;
+}
+.github{
+    height: auto;
+    margin-left: 90%;
+    margin-top: 19px;
+    position: absolute;
+    width: 80px;
+    align-items: center;
+}
+
