@@ -1,0 +1,109 @@
+<!-- Para eso, debemos escribir, en el archivo index.html, 
+la etiqueta necesaria para crear un formulario, aclarando dos de sus atributos 
+esenciales:
+El atributo method que indique POST como valor.
+El atributo action que indique resultado.html como valor.-->
+
+<html>
+  <head>
+    <title>Primer formulario</title>
+  </head>
+  <body>
+    <form action = "resultado.html" method= "POST">
+
+    </form>
+
+  </body>
+</html>
+
+<!--Queremos que exista un campo dentro del formulario para que el usuario pueda 
+    ingresar su nombre. Para eso, debemos agregar dos etiquetas dentro del formulario:
+
+La etiqueta <label> para informarle al usuario que debe ingresar su nombre. 
+La misma deberá tener el atributo for con el valor nombre.
+La etiqueta <input> con atributo type con el valor text 
+(para que el usuario pueda ingresar su nombre) y el atributo id con el valor nombre. 
+Por último, también debemos declarar el atributo name con el valor nombre ya 
+que si este atributo no figura, no se enviará el campo como resultado. -->
+
+<html>
+  <head>
+    <title>Campos en el formulario</title>
+  </head>
+  <body>
+    <form action="resultado.html" method="POST">
+    <label for = "nombre">Nombre</label>
+    <input type = "text" name = "nombre" id = "nombre">
+    </form>
+  </body>
+</html>
+
+<!--Creemos un formulario de registro!
+
+Queremos agregar tres campos para que el usuario pueda ingresar un nombre, un e-mail y 
+una contraseña. Deberemos usar las siguientes etiquetas:
+
+Una etiqueta <input> para que el usuario ingrese su nombre.
+Una etiqueta <input> para que el usuario ingrese su e-mail.
+Una etiqueta <input> para que el usuario ingrese su contraseña.
+Una etiqueta <label> para cada uno de los <input>.
+Los tres <input> deberán tener el atributo name declarado, con los valores nombre, 
+email y password para que la información efectivamente viaje al enviar el formulario.-->
+
+<html>
+  <head>
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <form action="resultado.html" method="POST">
+      <p>
+        <label>Nombre:</label>
+        <input type = "text" name = "nombre">
+      </p>
+
+      <p>
+        <label>email:</label>
+        <input type = "email" name = "email">
+      </p>
+      
+      <p>
+        <label>Contraseña:</label>
+        <input type = "password" name = "password">
+      </p>
+    </form>
+  </body>
+</html>
+
+<!--Para este ejercicio tenemos un formulario ya definido que está casi completo. 
+Queremos agregar algo fundamental que le está faltando: un botón que diga "ENVIAR" 
+para que el usuario pueda, efectivamente, enviar sus datos.-->
+
+<html>
+  <head>
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <form action="resultado.html" method="POST">
+      <p>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+      </p>
+
+      <p>
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+      </p>
+
+      <p>
+        <label>Contraseña:</label>
+        <input type="password" name="password" required>
+      </p>
+
+      <p>
+<button>
+<input type = "submit" value = "ENVIAR">
+</button>
+      </p>
+    </form>
+  </body>
+</html>

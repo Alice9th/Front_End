@@ -1,0 +1,95 @@
+<!--Formularios round-->
+
+<label>
+    <input type = "radio" name = "tipoSUscripcion"> Quincenal
+</label>
+
+<label>
+    <input type = "radio"name = "tipoSUscripcion"> Mensual
+</label>
+
+<label>
+    <input type = "radio"name = "tipoSUscripcion"> Trimestral
+</label>
+
+
+<!--Formularios continuacion: checkbox-->
+
+<label>
+    <input type = "checkbox" name = "pasaTiempos" value="tv"> Ver TV
+</label>
+
+<label>
+    <input type = "checkbox" name = "pasaTiempos" value="js"> Aprender JS
+</label>
+
+<label>
+    <input type = "checkbox" name = "pasaTiempos" value="html"> Practicar HTML
+</label>
+
+
+<!--Actividades PlayGround-->
+
+<!--Radio Button-->
+
+<input type = "radio" name="medioDePago" value="efectivo">
+
+<input type = "radio" name="medioDePago" value="Debito">
+
+<input type = "radio" name="medioDePago" value="Tarjeta">
+
+<!--Checkbos Button-->
+
+<input type = "checkbox" name="hobbies" value="Musica">
+
+<input type = "checkbox" name="hobbies" value="Pintura">
+
+<input type = "checkbox" name="hobbies" value="Juegos">
+
+<!--Usos particulares-->
+
+<label for="terminos">Acepto los términos</label>
+<input type="checkbox" name="terminos">
+
+<label for="newsletter">¡Quiero ese newsletter!</label>
+<input type="checkbox" name="newsletter">
+
+<!--Actividades-->
+
+<!--Queremos crear un formulario para averiguar si 
+    el usuario tiene o no tiene una mascota-->
+
+<html>
+  <head>
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="resultado.html" method="POST">
+        <label> ¿Tenés mascota? </label>
+        <input type="radio" name  = "mascota" value = "si">
+                <input type="radio" name  = "mascota" value = "no">
+
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
+
+<!--Hobbies-->
+
+<html>
+  <head>
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="resultado.html" method="POST">
+<label> ¿Cuáles son tus hobbies?</label>
+<input type = "checkbox" name="hobby" value="Pescar">Pescar
+
+<input type = "checkbox" name="hobby" value="Correr">Correr
+
+<input type = "checkbox" name="hobby" value="Yoga">Yoga
+
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
