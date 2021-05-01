@@ -1,0 +1,57 @@
+/*Media Queries*/
+
+/*Min width*/
+
+@media (min-width: 460px){
+    body {
+        background: red;
+    }
+}
+
+/*Max width*/
+
+@media (max-width: 678px){
+    body {
+        background: yellowgreen;
+    }
+}
+
+/*Orientacion*/
+
+@media (max-width: 460px)and (orientation: landscape){
+    body {
+        background: blue;
+    }
+}
+
+/*Estrategias de Diseño*/
+
+/*Mobile first*/
+
+body {
+    background: red;
+}
+
+@media (min-width: 460px){
+    /*Tablets*/
+}
+
+@media (min-width: 768px){
+    /*Laptop*/
+}
+
+/*Mobile Last*/
+
+body {
+    background: red;
+}
+
+@media (max-width: 768px){
+    /*Tablets*/
+}
+
+@media (max-width: 468px){
+    /*Smartphones*/
+}
+
+

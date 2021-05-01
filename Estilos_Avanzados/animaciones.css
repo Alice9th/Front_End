@@ -1,0 +1,100 @@
+/*Transform
+
+transform: function;
+
+*/
+
+transform: scale(2);
+
+transform: scale(x,y);
+
+transform: skew(15deg);
+
+transform: rotate(180deg);
+
+transform: translate(50px);
+
+transform: transform-origin(bottom right 60px);
+
+
+/*Transition*/
+
+/*Para pasar de un cuadrado a un círculo*/
+
+.mi-elemento {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+}
+
+.mi-elemento:hover {
+    border-radius: 50%;
+}
+
+/*Para un cambio progresivo*/
+
+.mi-elemento {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: border-radius 450ms;
+}
+
+.mi-elemento:hover {
+    border-radius: 50%;
+}
+
+/*Para cambios adicionales como posicion y color*/
+
+.mi-elemento {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    position: relative;
+    left: 0;
+    transition: border-radius 450ms;
+}
+
+.mi-elemento:hover {
+    border-radius: 50%;
+    background-color: peachpuff;
+    left: 30px;
+}
+
+/*NOTA: Este código de arriba sólo transiciona
+lo que se especificó, es decir, el border-radius*/
+
+/*Para transicionar TODO*/
+
+.mi-elemento {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    position: relative;
+    left: 0;
+    transition: all 450ms;
+}
+
+.mi-elemento:hover {
+    border-radius: 50%;
+    background-color: peachpuff;
+    left: 30px;
+}
+
+/*Ejercicios PlayGround*/
+
+.mi-elemento {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: border-radius 450ms;
+}
+ 
+.mi-elemento:hover {
+    border-radius: 50%;
+}
+
+
+
+
+

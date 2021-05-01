@@ -1,0 +1,169 @@
+/*Pseudo Selectores:
+Generan cambios visuales cuando pasamos con el cursor del mouse sobre un 
+determinado elemento, o cuando ya hemos visitado un determinado enlace.
+Permiten crear elementos y aplicar estilos en
+función de los estados y organización de los elementos
+Se dividen en dos: pseudo clases y pseudo elementos*/
+
+/*Pseudo Clases:
+Se agregan a los selectores ya conocidos*/
+
+
+selector:pseudo-clase {
+    propiedad: valor;
+}
+
+/*Pseudo clases de los enlaces*/
+
+
+a:link,
+a:visited {
+    color: rgb(98,8,194);
+    font-weight: bold;
+}
+
+a:hover,
+a:active {
+    color:rgb(136,11,74);
+}
+
+/*Pseudo clases: link
+aplica estilo a los enlaces <a></a> 
+que tengan la propiedad href*/
+
+a:link {
+    background-color: rgb(234,0,255);
+    border-color: rgb(161,17,89);
+    color: red;
+}
+
+/*Pseudo clases: visited:
+aplica estilo a los enlaces <a></a> que han sido
+visitados al menos una vez*/
+
+a:visited {
+    background-color: rgb(234,0,255);
+    border-color: rgb(161,17,89);
+    color: red;
+}
+
+/*Pseudo clases: hover:
+Puede ser aplicado a cualquier otro elemento
+de HTML.
+Aplica estilo a cualquier elemento sobre
+el cual el usuario posicione le cursor.*/
+
+
+a:hover {
+    background-color: gold;
+}
+
+/*Pseudo clases: active:
+aplica estilo a los enlaces <a></a> que esten siendo
+cliqueados por el usuario.
+Se utilzia para animaciones del click*/
+
+a:active {
+    background-color: rgb(234,0,255);
+    border-color: rgb(161,17,89);
+    color: red;
+}
+
+/*Pseudo clases de los inputs*/
+
+/* focus:
+Se aplica a un elemento que tiene el foco del cursor,
+cuando el cursos se encuentra dentro de dicho elemento, ej:
+el usuario está completando un campo en un formulario*/
+
+input:focus {
+    color: orange;
+    font-weight: bold;
+}
+
+/*Pseudo clases: disabled:
+se aplica cuando un elemento está deshabilitado, ej:
+se utiliza en campos que no se puedan completar
+en un formulario u otras opciones desactivadas*/
+
+input:disabled {
+    background-color: gray;
+}
+
+/*Pseudo Elementos: se usan junto a los selectores de CSS
+Se usan: nombre del selector primero y luego :: seguido del 
+pseudo elemento a utilizar*/
+
+selector::pseudo-elemento {
+    propiedad: valor;
+}
+
+/*Pseudo elemento::before: se utiliza
+junto con la propiedad content para introducir contenido
+en el doc usando CSS*/
+
+div::before {
+    content: "Esto se renderiza antes del elemento";
+    color: red;
+}
+
+/*--Pseudo elemento:: after:
+se utiliza junto con content para introducir contenido
+en el documento usando CSS*/
+
+div::after {
+    content: "Esto se renderiza después del elemento";
+    color: red;
+}
+
+/*Pseudo clases: invalid::after
+se utiliza para aplicar estilo a los inputs
+<input/> que tengan la propiedad required*/
+
+input:invalid {
+    background-color: red;
+}
+
+/*Pseudo clases: :nth-child(), coincide
+con uno o más elementos de suposicion entre
+un frupo de hermanos.
+Se especifica con un único arguemnto que
+represerna el ptrón para los elementos coincidentes.*/
+
+li:nth-child(1) {
+    border-radius: 5px;
+    background-color: red;
+}
+
+/*Pseudo clases: requirer: atributo booleano,
+para aplicar estilos se usa <input:required>
+Cuando está presente especifíca que hay un campo que completar*/
+
+
+/*EN html
+
+<input type = "text" required>
+
+*/
+
+/*Pseudo clases: valid*/
+
+input:valid {
+    background-color: green;
+}
+
+/*Pseudo clases: disabled*/
+
+input:disabled {
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
