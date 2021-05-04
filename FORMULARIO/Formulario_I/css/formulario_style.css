@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:ital,wght@1,700&family=Roboto&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0 px;
+}
+.descuento{
+    width: 100%;
+    height: 23px;
+    background-color: #1CD1B0;
+    padding-left: 20px;
+    top: 2px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+
+}
+
+.tienda{
+    background-color: #00669F;
+}
+
+
+.nombre_tienda{
+    color:white;
+    font-family:Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 35,16px;
+    position: absolute;
+    top: 50px;
+    left: 110px;
+}
+
+.navegacion{
+        text-align: center;
+        background: #043550;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 10px;
+        font-size: larger;
+        font-weight: bold;
+
+}
+
+.span_navigationSpace {
+    padding-right: 50px;
+    color: cornsilk;
+}
+a { color: rgb(22, 13, 148); }
+
+/*
+
+.visitado a​:visited { 
+    color: purple;
+    transform: scale(2,2); 
+}
+
+.visitado a​:hover { 
+    color: purple;
+    transform: scale(2,2);
+    position: relative;
+}
+*/
+
+.box {
+    margin: 160px auto;
+    width: fit-content;
+}
+
+
+.login{
+    font-family: inter, sans-serif;
+    font-style: normal;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    left: 410px;
+    top: 300px;
+
+}
+
+.form_nom{
+    /* Rectangle 2 */
+
+
+position: absolute;
+width: 220px;
+height: 30px;
+left: 100px;
+top: 160px;
+
+background: #FFFFFF;
+border: 1.53407px solid #000000;
+box-sizing: border-box;
+}
+
+.form_pass{
+    position: absolute;
+    width: 220px;
+    height: 30px;
+    left: 100px;
+    top: 200px;
+
+background: #FFFFFF;
+border: 1.53407px solid #000000;
+box-sizing: border-box;
+}
+
+.cuentanoexistente {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 5px;
+    top: 450px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.enviar{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: 110px;
+    top: 280px;
+    text-align: center;
+    border: whitesmoke;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    font-family: karla, sans-serif;
+    font-size: 24px;
+    margin-bottom: 100px;
+
+}
+
+
+footer{
+    background-color: #00669F;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    margin-top: 50%;
+    top: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.github{
+    height: auto;
+    position: absolute;
+    width: 50px;
+    left: 800px;
+    bottom: 15px;
+    align-items: right;
+}
