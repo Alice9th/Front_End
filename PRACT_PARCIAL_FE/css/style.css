@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Para utilizar pseudo selectores, los colores más utilizados*/
+:root {
+
+    --primary-color:#062f5b;
+    --secondary-color: white;
+   }
+
+body{
+    font-family: "Roboto", sans-serif;
+   }
+
+nav { /*automaticamente coge el width de la página*/
+    display: flex; /*siempre va en el contenedor padre*/
+    height: 80px;
+    background-color: var(--primary-color);
+
+    }
+
+.logo{
+    margin-left: 35px;
+    margin-top: 3px;
+    display:flex;
+
+}
+
+/*.enlaces{
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+margin-bottom: auto;
+list-style: none; 
+
+
+}*/
+
+.nav_principal{
+    display: flex;
+}
+
+header .nav_principal ul{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    background-color: var(--primary-color);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 30px;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/china.jpg);
+    height: 400px;
+    background-repeat:none;
+    background-size:80%;
+    background-position:center;
+
+}
+
+h1{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 100px;
+
+}
+
+h2{
+    margin: 2%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.contenedor{ /*como es flexible no necesita medidas, son automaticas con las otras cajitas*/
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 15px;
+
+
+}
+
+.caja1{
+    width: 30%;
+    background-color:var(--secondary-color);
+    border-style:groove;
+    position: relative;
+    width: 30%;       
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px gray;    
+}
+
+/*vamos a hacer un hijito*/
+
+.img1{
+    background-color: turquoise;
+    background-image: url(../img/beijin.jpeg);
+    width: 90%;
+    height: 300px;
+    background-size: cover;
+    background-position:center;
+    margin: auto;
+    margin-top: 4%;
+
+}
+
+.img2{
+    background-color: turquoise;
+    background-image: url(../img/argentina.jpeg);
+    width: 90%;
+    height: 300px;
+    background-size: cover;
+    background-position:center;
+    margin: auto;
+    margin-top: 4%;
+
+}
+
+.img3{
+    background-color: turquoise;
+    background-image: url(../img/colombia.jpeg);
+    width: 90%;
+    height: 300px;
+    background-size: cover;
+    background-position:center;
+    margin: auto;
+    margin-top: 4%;
+
+}
+.pais{
+    width: 90%;
+    height: 300px;
+    background-size: cover;
+    background-position:center;
+    margin: auto;
+    margin-top: 4%;
+    padding-left: 20px;
+
+}
+
+.parrafo{
+    width: 90%;
+    height: 300px;
+    background-size: cover;
+    background-position:center;
+    margin: auto;
+    margin-top: 4%;
+    padding-left: 20px;
+
+}
+
+h3{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.contenedor2{ /*como es flexible no necesita medidas, son automaticas con las otras cajitas*/
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 15px;
+    background-color: limegreen;
+
+}
+
+h4{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px; 
+}
+
+.formulario{
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    position: relative;
+}
+
+.formulario2{
+    width: 50%;
+    background-color: violet;
+    justify-content: flex-end;
+    position: relative;
+    
+}
+
+button{
+    border-radius: 5px;
+    width: 30%;
+    height: 20%;
+}

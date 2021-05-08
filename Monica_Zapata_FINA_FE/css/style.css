@@ -1,0 +1,268 @@
+/* Estilos Generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
+
+:root {
+    --color-principal: white; 
+    --color-secundario: #F0A83E;
+    --color-tres:#222222;
+    --decoration-color:var(--color-tres);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+}
+
+header{
+    background-color: var(--color-tres);
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 12px;
+    color: #F3F3F3;
+    align-items: center;
+    list-style: none;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;;
+}
+
+header nav ul {
+    /*Sacamos flex*/
+    display: flex;
+    gap: 13px;
+    /*Sacamos flex*/
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-left: 2vw;
+}
+
+.imagen{
+    image-resolution:initial;
+}
+
+.fondo_bg{
+    background-color: var(--color-secundario);
+    margin: auto;
+    display: flex;
+    height: 82px;
+    left: calc(50% - 1024px/2);
+    top: 20px;
+    padding-top: 25px;  
+    
+   
+}
+
+span{
+    color: #3C2313;
+}
+
+h1{
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto
+
+}
+
+h2{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 47px;
+/* identical to box height */
+
+
+color: #3C2313;
+}
+
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+
+}
+
+.contenedor3{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-principal);
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    display: flex; 
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+nav ul li a{
+  position:relative;
+  margin:15px;
+  font-size:25px;  
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+
+nav ul li a:before{
+  content:'';
+  background: var(--decoration-color);
+  position:absolute;
+  bottom:-10px;
+  height: 5px;
+  width: 0px;
+  transition-duration: 0.5s; 
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+.lista ul li{
+    list-style: none;
+    color: #666666;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 18px;
+/* identical to box height */
+
+
+}
+
+
+.card {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+h4{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 18px;
+/* identical to box height */
+
+text-align: center;
+
+color: #3C2313;
+}
+
+.precio{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+/* identical to box height */
+
+text-align: center;
+
+color: var(--color-secundario);
+}
+
+footer{
+    display: flex;
+    background-color: var(--color-tres);
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    height: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 12px;
+    justify-content: space-around;
+}
+
+
+/*RESPONSIVE*/
+
+/*** Responsive */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    header nav ul{
+        display: none;
+    }
+
+    header nav::before{
+        content: '\f0c9';
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        font-size: 2rem;
+        color: black;
+        align-items:flex-start
+    }
+
+    #card-section>div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90vw;
+    }
+    section>div {
+        display: block;
+    }
+}
+    h4 {
+        margin-top: 30px;
+    }
+
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2rem;
+    }
+    header {
+        height: 15vh;
+    }
+
+}

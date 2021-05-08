@@ -376,7 +376,7 @@ h1{
 .plus{
     /* Ellipse 2 */
 background-size: contain;
-position: relative;
+position: absolute;
 width: 150px;
 height: 150px;
 left: 100px;

@@ -88,7 +88,7 @@ nav ul li a:hover::before{
 
 .social ul li a:hover{
     transform: scale(2,2);
-    padding: 10px 20px 10px 15px);
+    padding: (10px 20px 10px 15px);
 }
 
 

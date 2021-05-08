@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --primary-color:#062f5b;
+    --secondary-color: white;
+    --decoration-color: white;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Aqui termina lo mas importante*/
+
+
+/*Aqui comienza el header*/
+
+/* primera caja del header*/
+
+
+.top{
+    height: 40px;
+    background-color: turquoise;
+
+}
+
+.parrafo1{
+    position: relative;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+/*termanina la 1 caja*/
+
+/*Aqui empiza la caja 2-logo*/
+.logo{    
+    height: 80px;
+    margin-left: px;
+    background-color: violet;
+    display: flex;
+}
+
+h4{
+    margin-left: 40px;
+    align-items: center;
+    display: flex; 
+    flex-wrap: wrap;  
+    flex-direction: row; 
+    font-size: 30px;
+    
+}
+/*Aqui termina la caja del logo*/
+
+/*Aqui header empieza los enlaces de navegacion*/
+.nav-principal{
+    display: flex;
+}
+
+header .nav-principal ul {
+    list-style: none;
+    display: flex;    
+    flex-wrap: wrap;  
+    flex-direction: row;
+    margin-top: 20px; 
+
+}
+
+
+nav{
+    display: flex;
+    height: 80px;
+    background-color: var(--primary-color);    
+       
+}
+
+
+ul li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    
+}
+
+nav ul li {
+    margin: 20px;
+}
+nav ul li a{
+  position:relative;
+  margin:15px;
+  font-size:25px;  
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+
+nav ul li a:before{
+  content:'';
+  background: var(--decoration-color);
+  position:absolute;
+  bottom:-10px;
+  height: 5px;
+  width: 0px;
+  transition-duration: 0.5s; 
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+/*Aqui termina el nav*/
+
+/*Aqui comienza el header*/
+
+
+/*Aqui comienza el main*/
+
+
+
+.fondo{
+    background-image: url(../img/bg-header.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;       
+    align-items: center;
+    flex-wrap: wrap;  
+    flex-direction: row;
+    justify-content: center;
+}   
+
+h1 {
+    color: var(--secondary-color);
+    text-align: center;    
+    font-size: 60px;
+       
+}
+
+/*aqui termina la 1 seccion que tiene la imagen*/
+
+
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;    
+    font-size: 30px;
+}
+
+
+/*Aqui comieza la 2 section */
+
+
+/*Aqui empiza el contendor 1 de la section uno-contenedor padre*/
+
+.contenedor1 {
+    display: flex;       
+    justify-content: space-around; /*para se ponga en la mitad y con espacio*/      
+
+}
+
+/*Aqui empiza las cajas hijas cards*/
+
+.caja-card{
+    position: relative;
+    width: 30%;       
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px gray;       
+
+}
+
+.imagen1{
+    margin-top: 20px;
+    background-image: url(../img/colombia.jpeg);
+    width: 90%;
+    height: 300px;
+    background-position: center;
+    background-size: cover ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.pais{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;    
+    color: blue;
+    font-size: 20px;
+  
+}
+
+.parrafo{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    
+    
+    
+}
+
+/*cambiar imagen-otras card*/
+
+.imagen2{
+    margin-top: 20px;
+    background-image: url(../img/brasil.jpeg);
+    width: 90%;
+    height: 300px;
+    background-position: center;
+    background-size: cover ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.imagen3{
+    margin-top: 20px;
+    background-image: url(../img/argentina.jpeg);
+    width: 90%;
+    height: 300px;
+    background-position: center;
+    background-size: cover ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*Aqui termina el cambio de las imagenes*/
+
+
+
+/*Aqui termina la seccion 1-contenedor1*/
+
+
+
+/*Aqui comienza la segunda section de los contenedor2*/
+
+/*caja padre*/
+.contenedor2{
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: space-between; /*propiedad para ponerlo a los lados*/  
+    
+}
+
+/*termina la caja padre*/
+
+/*Aqui empieza la caja 1 del formulario*/
+
+.caja-formulario1{
+    width: 50%;
+    background-color: #062f5b;
+    border: solid rgb(167, 159, 159) 1px;
+    color: white;
+    border-radius: 5px;
+    margin: 10%;
+    margin-top: 2%;
+    
+    
+}
+
+/*Aqui termina la caja 1 del formulario*/
+.caja-formulario2{
+
+    width: 50%;
+    margin: 10%;
+    margin-top: 2%;
+
+}
+
+.infoCont{
+    text-align: right;
+    color: rgb(61, 61, 61);
+        
+}
+/*propiedades al input*/
+input{    
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+/*propiedad para mover el input*/
+
+.input{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 26px;
+}
+
+/*propiedad de label*/
+.label{
+    position: relative;
+    margin-left: 30px;
+    
+
+}
+label{
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+
+}
+
+
+form{
+    padding: 10%;
+}
+
+form input{
+    margin: auto;
+    width: 90%;
+    height: 50px; 
+    border: 2px solid;
+    border-radius: 20px;
+    
+}
+
+
+ button{
+    text-align: center;
+    background: #062f5b;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    height: 50px;
+    border: 2px solid white;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 50px;
+ }
+
+span{
+    font-weight: bolder;
+}
+.contenedor3{
+    display: flex;
+    background-color: var(--primary-color);
+    height: 60px;
+    justify-content: space-between; /*propiedad para ponerlo a los lados*/  
+    
+} 
+
+ul li {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    list-style: none;
+    
+}
+
+footer{
+    background-color: var(--primary-color);
+}
+
+
+/* Responsive */
+@media screen and (max-width : 720px){
+    .contenedor1{
+        flex-direction: column;
+    }
+
+    .caja-card{
+        width: 100%;
+    }
+
+ header nav ul li {
+     display: none;
+ }
+ header nav::before{
+     content: '\f0c9';
+     font-family: "Font Awesome 5 free";
+     font-weight: 900;
+     font-size: 2rem;
+     color: var(--secondary-color);
+
+ }
+       
+    
+    
+    }

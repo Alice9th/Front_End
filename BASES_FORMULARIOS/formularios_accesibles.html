@@ -1,0 +1,48 @@
+<!--Formularios Accesibles-->
+
+<!--Etiquetar los controles de forma correcta:
+
+Label for: la relacion entre etiqueta y el control del formulario al que 
+pertenece debe estar siempre asociada con for-->
+
+<label for="fname">Nombre</label>
+<input id="fname" type="text" name="nombre">
+
+<!--Etiquetas de agrupamiento-->
+
+<!--Fielset-->
+<fieldset>
+<legend>Tipo de equipo</legend>
+<br>
+<input id="pc" type="radio" name="rb3" value="radiobutton">
+<label for="pc">PC</label><br>
+<input id="linux" type="radio" name="rb3" value="radiobutton">
+<label for="linux">Linux</label><br>
+</fieldset>
+
+<!--Outgroup:
+Permite agrupar las opociones de seleccion
+de una lista de formulario.
+Label es obligatorio para este elemento-->
+
+<p> Elige un auto:
+<select>
+    <optgroup label="Ferrari">
+        <option>458 Spider</option>
+        <option>F12 Berlinetta</option>
+        <option>California T</option>
+   </optgroup>
+   <optgroup label="Porsche">
+       <option>Macan</option>
+       <option>918 Spyder</option>
+    </optgroup>
+</select>
+
+</p>
+
+<!--Campos Obligatorios-->
+
+<!--Tabindex-->
+<a href="docuemnto2.html" tabindex="2" style="float: right;">
+Segundo documento.</a>
+<a href="documento1.html" tabindex="1">Primer documento.</a>
