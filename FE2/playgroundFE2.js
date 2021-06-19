@@ -33,4 +33,33 @@ window.addEventListener('load', function() {
 
   //Eventos de mouse
 
+  //Ejercicio 1:
+
+  window.addEventListener('load', function() {
+
+    let titulo = document.querySelector('h1');
+    titulo.addEventListener("mouseover", function(){
+       titulo.classList.add("titulo")
   
+    })
+  
+  });
+
+  //Ejercicio 2:
+
+  window.addEventListener('load', function() {
+
+    let links = document.querySelectorAll("a")
+  
+    for(let link of links) {
+      link.addEventListener("mouseout", function(){
+        this.classList.toggle() //Si el link no tiene la clase "dark-mode", asignársela y si la tiene, quitársela
+      })
+    }
+  
+  });
+
+  //Eventos de teclado:
+
+  
+
