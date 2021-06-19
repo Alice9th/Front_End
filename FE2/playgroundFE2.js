@@ -1,3 +1,17 @@
+//Modificando clases:
+
+//Ejercicio 1:
+
+  window.addEventListener('load', function() {
+
+    // escribí tu código aquí
+   let elemento = document.querySelector("div");
+   elemento.classList.add('container')
+  
+  });
+
+
+
 //Eventos:
 
 //Ejercicio 1:
@@ -60,6 +74,7 @@ window.addEventListener('load', function() {
   });
 
   //Eventos de teclado:
+
 
   
 
